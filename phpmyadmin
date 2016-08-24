@@ -2,12 +2,12 @@ server {
 ...
 
     location /phpmyadmin {
-        root /usr/share/;
+        root /var/www/html;
         index index.php index.html index.htm;
         
         location ~ ^/phpmyadmin/(.+\.php)$ {
             try_files $uri =404;
-            root /usr/share/;
+            root /var/www/html;
             fastcgi_pass unix:/var/run/php5-fpm.sock;
             fastcgi_index index.php;
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
@@ -15,7 +15,7 @@ server {
         }
 
         location ~* ^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$ {
-            root /usr/share/;
+            root /var/www/html;
         }
     }
 
