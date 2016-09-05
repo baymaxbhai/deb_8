@@ -1,11 +1,11 @@
 server {                                                         
-        server_name baymaxbhai.xyz;             
+        server_name baymaxbhai.xyz www.baymaxbhai.xyz;             
         listen 443;                                               
         port_in_redirect on;                                    
         access_log /var/log/nginx/baymaxbhai.xyz.access.log;      
         error_log /var/log/baymaxbhai.xyz.error.log;              
-        ssl on; ssl_certificate /etc/nginx/ssl//ssl-bundle.crt; 
-        ssl_certificate_key /etc/nginx/ssl/server.key;
+        ssl on; ssl_certificate /etc/nginx/ssl/baymaxbhai.xyz_bundle.crt; 
+        ssl_certificate_key /etc/nginx/ssl/baymaxbhai.xyz.key;
  
         # side note: only use TLS since SSLv2 and SSLv3 have had recent vulnerabilities 
         ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
@@ -19,7 +19,8 @@ ssl_ciphers 'ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA
         location / {                                             
                 try_files $uri $uri/ /index.php?$args;           
         }                                                        
-        # Cache static files for as long as possible             
+        
+# Cache static files for as long as possible             
         location                                                 
 ~*.(ogg|ogv|svg|svgz|eot|otf|woff|mp4|ttf|css|rss|atom|js|jpg|jp$
 {                                                                
