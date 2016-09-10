@@ -1,4 +1,4 @@
-; Zone file for bqymaxbhqi.xyz
+; Zone file for baymaxbhai.xyz
 @ 100 IN SOA dns1.baymaxbhai.xyz. admin.baymaxbhai.xyz. (
 2014011503 ; serial, todays date+todays
 28800 ; refresh, seconds
