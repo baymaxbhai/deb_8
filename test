@@ -21,13 +21,13 @@ mail.baymaxbhai.xyz. 100 IN A
 baymaxbhai.xyz. 100 IN MX 0 mail.baymaxbhai.xyz.
 
 ; CNAME RECORDS
-imap 100 IN CNAME mail.your_domain_name.com.
-smtp 100 IN CNAME mail.your_domain_name.com.
-www 100 IN CNAME your_domain_name.com.
+imap 100 IN CNAME mail.baymaxbhai.xyz.
+smtp 100 IN CNAME mail.baymaxbhai.xyz.
+www 100 IN CNAME baymaxbhai.xyz.
 
 ; TXT/SPF RECORDS
-your_domain_name.com. 14000 IN TXT "v=spf1 a mx ~all"
-your_domain_name.com. 14000 IN SPF "v=spf1 a mx ~all"
-your_domain_name.com. 14000 IN TXT "google-site-verification=CpwOHG-YXtiy4zd0r7FOHEc2IbsFEDzdZ87c507mODM"
-mail._domainkey 14000 IN TXT ( "v=DKIM1; k=rsa; "
-          "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDCETlWqYZuR30rAz1Zf7SxfUAf3JeipaRvSv+10NPu7fF64FfzjEtzTJTwk1XisPhEmQWuw242AvMz+8AFSN0YyNM8nXGw2H0DgbomWYljyVhCVvRF0+3b6rUdosYxWTsMFrKsgV6BEtWsFWpkfl4xGo2+PdsaEkFA5XPShZeONQIDAQAB" ) ; ----- DKIM key mail for your_domain_name.com
+baymaxbhai.xyz. 14000 IN TXT "v=spf1 a mx ~all"
+baymaxbhai.xyz. 14000 IN SPF "v=spf1 a mx ~all"
+baymaxbhai.xyz. 14000 IN TXT "google-site-verification=CpwOHG-YXtiy4zd0r7FOHEc2IbsFEDzdZ87c507mODM"
+mail.baymaxbhai.xyz 14000 IN TXT ( "v=DKIM1; k=rsa; "
+          "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDCETlWqYZuR30rAz1Zf7SxfUAf3JeipaRvSv+10NPu7fF64FfzjEtzTJTwk1XisPhEmQWuw242AvMz+8AFSN0YyNM8nXGw2H0DgbomWYljyVhCVvRF0+3b6rUdosYxWTsMFrKsgV6BEtWsFWpkfl4xGo2+PdsaEkFA5XPShZeONQIDAQAB" ) ; ----- DKIM key mail for baymaxbhai.xyz
